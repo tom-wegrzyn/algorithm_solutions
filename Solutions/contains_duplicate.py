@@ -1,8 +1,19 @@
 class Solution:
-    def containsDuplicateFirstIteration(self, nums):
+    def containsDuplicateFirstIteration(self, nums: list[int]) -> bool:
         """
-        :type nums: List[int]
-        :rtype: bool
+        Takes in a list of numbers and determines if the list contains a duplicate.
+
+        Parameters
+        ----------
+        self : Instance
+            The instance of the class to access helper methods
+        nums : List[int]
+            The list of numbers to find a duplicate in.
+
+        Returns
+        ----------
+        bool
+            True or false depending on if the list contains a duplicate.
         """
         if nums:
             nums.sort()
@@ -13,7 +24,23 @@ class Solution:
         return False
 
     @staticmethod
-    def binarySearch(array, target):
+    def binarySearch(array: [int], target: int) -> bool:
+        """
+        Takes in an array of numbers and searches for the target parameter in the array
+        implementing the binary search method.
+
+        Parameters
+        ----------
+        array : array[int]
+            An array of numbers to search through
+        target : int
+            A number to find inside the array
+
+        Returns
+        ----------
+        bool
+            True or false depending on if the array contains the value.
+        """
         start, mid, end = 0, 0, len(array) - 1
         while start <= end:
             mid = start + (end - start) // 2
@@ -26,10 +53,19 @@ class Solution:
         return False
 
     @staticmethod
-    def containsDuplicateSecondIteration(nums):
+    def containsDuplicateSecondIteration(nums: list[int]) -> bool:
         """
-        :type nums: List[int]
-        :rtype: bool
+        Takes in a list of numbers and determines if the list contains a duplicate.
+
+        Parameters
+        ----------
+        nums : List[int]
+            The list of numbers to find a duplicate in.
+
+        Returns
+        ----------
+        bool
+            True or false depending on if the list contains a duplicate.
         """
         numbers = set(nums)
         if len(numbers) != len(nums):
