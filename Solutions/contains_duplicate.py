@@ -1,5 +1,5 @@
 class Solution:
-    def containsDuplicateFirstIteration(self, nums: list[int]) -> bool:
+    def contains_duplicate_first_iteration(self, nums: list[int]) -> bool:
         """
         Takes in a list of numbers and determines if the list contains a duplicate.
 
@@ -19,12 +19,12 @@ class Solution:
             nums.sort()
             while len(nums) > 0:
                 valueToFindDupe = nums.pop(0)
-                if self.binarySearch(nums, valueToFindDupe):
+                if self.binary_search(nums, valueToFindDupe):
                     return True
         return False
 
     @staticmethod
-    def binarySearch(array: [int], target: int) -> bool:
+    def binary_search(array: [int], target: int) -> bool:
         """
         Takes in an array of numbers and searches for the target parameter in the array
         implementing the binary search method.
@@ -53,7 +53,7 @@ class Solution:
         return False
 
     @staticmethod
-    def containsDuplicateSecondIteration(nums: list[int]) -> bool:
+    def contains_duplicate_second_iteration(nums: list[int]) -> bool:
         """
         Takes in a list of numbers and determines if the list contains a duplicate.
 

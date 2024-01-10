@@ -1,6 +1,6 @@
 class Solution:
     @staticmethod
-    def twoSum(nums: list[int], target: int) -> list[int]:
+    def two_sum(nums: list[int], target: int) -> list[int]:
         """
         Takes in list of numbers and a target value and determines if two of the ints in the list can add
         up to the target.

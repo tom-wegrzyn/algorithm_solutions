@@ -1,6 +1,6 @@
 class Solution:
     @staticmethod
-    def isAnagram(s: str, t: str) -> bool:
+    def is_anagram(s: str, t: str) -> bool:
         """
         Takes in two strings and determines if they are an anagram.
 

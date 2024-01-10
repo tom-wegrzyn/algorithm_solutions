@@ -12,12 +12,12 @@ class TestValidAnagram(unittest.TestCase):
         self.str6 = "car"
 
     def test_valid_anagram(self):
-        self.assertEqual(Solution.isAnagram(self.str1, self.str2), True)
-        self.assertEqual(Solution.isAnagram(self.str3, self.str4), True)
+        self.assertEqual(Solution.is_anagram(self.str1, self.str2), True)
+        self.assertEqual(Solution.is_anagram(self.str3, self.str4), True)
 
     def test_invalid_anagram(self):
-        self.assertEqual(Solution.isAnagram(self.str5, self.str6), False)
-        self.assertEqual(Solution.isAnagram(self.str3, self.str6), False)
+        self.assertEqual(Solution.is_anagram(self.str5, self.str6), False)
+        self.assertEqual(Solution.is_anagram(self.str3, self.str6), False)
 
 
 if __name__ == '__main__':
